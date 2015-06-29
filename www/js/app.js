@@ -30,23 +30,60 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
-  .state('app.search', {
-    url: "/search",
+  .state('app.glossary', {
+    url: "/glossary",
     views: {
       'menuContent': {
-        templateUrl: "templates/search.html"
+        templateUrl: "templates/glossary.html"
       }
     }
   })
 
-  .state('app.browse', {
-    url: "/browse",
+  .state('app.event_details', {
+    url: "/event_details",
     views: {
       'menuContent': {
-        templateUrl: "templates/browse.html"
+        templateUrl: "templates/event_details.html"
       }
     }
   })
+
+  .state('app.event_schedule', {
+    url: "/event_schedule",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/event_schedule.html"
+      }
+    }
+  })
+
+  .state('app.floor_diagrams', {
+    url: "/floor_diagrams",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/floor_diagrams.html"
+      }
+    }
+  })
+
+  .state('app.setup_diagrams', {
+    url: "/setup_diagrams",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/setup_diagrams.html"
+      }
+    }
+  })
+
+  .state('app.staff', {
+    url: "/staff",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/staff.html"
+      }
+    }
+  })
+
     .state('app.playlists', {
       url: "/playlists",
       views: {
